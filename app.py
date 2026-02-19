@@ -85,7 +85,7 @@ if st.session_state.finished:
 
 else:
     # === 選択画面 ===
-    st.markdown(f"**ラウンド {st.session_state.round_count}**： 現在 **{len(st.session_state.candidates)}** 個の候補があります。")
+    st.markdown(f"ラウンド {st.session_state.round_count}： 現在 **{len(st.session_state.candidates)}** 個の候補があります。")
     
     # ユーザーに「最終的に1つに絞る」というゴールを伝える案内文
     st.info(

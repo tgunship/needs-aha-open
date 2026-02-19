@@ -32,7 +32,9 @@ DEFAULT_NEEDS = [
     "安らげる居場所", "遊び・気軽さ", "喜び", "祝福", "挑戦・刺激"
 ]
 
-st.title("🎯 ニーズ アハ！カードオープン版")
+st.title("🎯 ニーズ アハ！")
+# タイトルの直下に小さくバージョン情報を表示
+st.markdown("<div style='font-size: 14px; color: #888888; margin-top: -15px; margin-bottom: 20px;'>カードオープン版 Ver1.00</div>", unsafe_allow_html=True)
 
 # --- 2. 初期設定 ---
 if 'candidates' not in st.session_state:

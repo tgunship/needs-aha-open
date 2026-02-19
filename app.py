@@ -91,7 +91,7 @@ else:
         "💡 **最終的に「これだ！」という1つのニーズに絞り込んでいきます。**\n\n"
         "今のリストから、直感でピンときたものを**いくつでも**チェックして、「しぼりこみ！」を押してください。"
     )
-    st.markdown(f"ラウンド {st.session_state.round_count}： 現在 **{len(st.session_state.candidates)}** 個の候補があります。")
+    st.markdown(f"ラウンド {st.session_state.round_count}： 現在 **{len(st.session_state.candidates)}個**の候補があります。")
     
     # フォームを使用して、ボタンが押されるまで画面を更新しないようにする
     with st.form("selection_form"):

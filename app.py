@@ -85,13 +85,13 @@ if st.session_state.finished:
 
 else:
     # === 選択画面 ===
-    st.markdown(f"ラウンド {st.session_state.round_count}： 現在 **{len(st.session_state.candidates)}** 個の候補があります。")
     
     # ユーザーに「最終的に1つに絞る」というゴールを伝える案内文
     st.info(
         "💡 **最終的に「これだ！」という1つのニーズに絞り込んでいきます。**\n\n"
         "今のリストから、直感でピンときたものを**いくつでも**チェックして、「しぼりこみ！」を押してください。"
     )
+    st.markdown(f"ラウンド {st.session_state.round_count}： 現在 **{len(st.session_state.candidates)}** 個の候補があります。")
     
     # フォームを使用して、ボタンが押されるまで画面を更新しないようにする
     with st.form("selection_form"):
